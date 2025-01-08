@@ -1,7 +1,8 @@
 "use client";
 import React from "react";
 import { Box, Heading, Text, Link, Flex, Grid } from "@chakra-ui/react";
-import Image from "next/image"; // Импортируем компонент Image из next/image
+import Image from "next/image";
+import tempBackground from "../public/temp_background.png";
 
 // Словарь с новостями
 const newsItems = [
@@ -11,7 +12,7 @@ const newsItems = [
     date: "9 января, 2025",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum eros sollicitudin, ultricies urna in, laoreet mauris. ",
-    imageUrl: "https://via.placeholder.com/400x200",
+    imageUrl: tempBackground,
   },
   {
     id: 2,
@@ -19,7 +20,7 @@ const newsItems = [
     date: "7 января, 2025",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum eros sollicitudin, ultricies urna in, laoreet mauris. ",
-    imageUrl: "https://via.placeholder.com/400x200",
+    imageUrl: tempBackground,
   },
   {
     id: 3,
@@ -27,7 +28,7 @@ const newsItems = [
     date: "27 декабря, 2024",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse interdum eros sollicitudin, ultricies urna in, laoreet mauris. ",
-    imageUrl: "https://via.placeholder.com/400x200",
+    imageUrl: tempBackground,
   },
 ];
 
