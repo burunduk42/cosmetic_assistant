@@ -4,8 +4,6 @@ import {
   Box,
   Flex,
   Heading,
-  Text,
-  Link,
   Button,
   Input,
   Textarea,
@@ -151,27 +149,19 @@ const SurveyForm: React.FC = () => {
   };
 
   return (
-    <Flex
-      minH="100vh" // Минимальная высота на весь экран
-      align="center" // Центрирование по вертикали
-      justify="center" // Центрирование по горизонтали
-      bg="gray.50" // Светло-серый фон
-      py={12}
-    >
+    <Flex minH="100vh" align="center" justify="center" bg="gray.50" py={12}>
       <Box
         bg="white"
-        p={8} // Внутренние отступы
-        borderRadius="lg" // Закругленные углы
-        boxShadow="md" // Тень
-        maxW="600px" // Максимальная ширина формы
-        w="100%" // Ширина формы на 100% от родителя
+        p={8}
+        borderRadius="lg"
+        boxShadow="md"
+        maxW="600px"
+        w="100%"
       >
-        {/* Заголовок формы */}
         <Heading as="h1" fontSize="2xl" mb={6} textAlign="center">
           Анкета для рекомендаций по уходу за кожей
         </Heading>
 
-        {/* Форма */}
         <form onSubmit={handleSurveySubmit}>
           <Fieldset.Root size="lg" maxW="md">
             <Stack>
@@ -214,18 +204,18 @@ const SurveyForm: React.FC = () => {
               {/* Чувствительность */}
               <Fieldset.Content>
                 <Field label="Есть ли у вас чувствительность к каким-либо продуктам?">
-                  <Textarea
-                    id="sensitivity"
-                    name="sensitivity"
-                    placeholder="Напишите, если да..."
-                    required
-                  />
+                  <NativeSelectRoot>
+                    <NativeSelectField
+                      name="sensitivity"
+                      items={["да", "нет"]}
+                    />
+                  </NativeSelectRoot>
                 </Field>
               </Fieldset.Content>
 
               {/* Частота очищения */}
               <Fieldset.Content>
-                <Field label="Сколько раз в неделю вы очищаете лицо?">
+                <Field label="Сколько раз в неделю вы очищаете лицо? (количество утром и вечером)">
                   <Input
                     type="number"
                     id="cleansingFrequency"
