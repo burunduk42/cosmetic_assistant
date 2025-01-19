@@ -21,7 +21,8 @@ const menuLinks = [
   { label: "Главная", href: "/" },
   { label: "Как это работает", href: "/#steps" },
   { label: "Цены", href: "/#pricing" },
-  { label: "Пройти анкету", href: "/worksheet" },
+  { label: "Пройти анкету", href: "/recomendations" },
+  { label: "Анализ состава", href: "/worksheet" },
 ];
 
 const MyMenu: React.FC = () => {
