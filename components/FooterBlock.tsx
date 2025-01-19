@@ -2,7 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { Box, Flex, Text, Container } from "@chakra-ui/react";
-import logotype from "../public/var 1 svg.svg"; // Импортируем логотип
+import logotype from "../public/var 1 svg.svg";
 
 const FooterBlock: React.FC = () => {
   // Получаем текущий год
@@ -16,7 +16,7 @@ const FooterBlock: React.FC = () => {
       borderColor="gray.200"
       mt="auto" // Чтобы футер прижимался к низу страницы
     >
-      <Container maxW="6xl" mx="auto">
+      <Container maxW="7xl" mx="auto">
         <Flex
           direction={{ base: "column", md: "row" }}
           align="center"

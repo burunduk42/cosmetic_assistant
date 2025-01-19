@@ -13,6 +13,12 @@ export default {
         foreground: "var(--foreground)",
       },
     },
+    theme: {
+      fontFamily: {
+        sans: ["var(--font-roboto)", "sans-serif"],
+        mono: ["var(--font-roboto-mono)", "monospace"],
+      },
+    },
   },
   plugins: [],
 } satisfies Config;
