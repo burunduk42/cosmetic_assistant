@@ -252,13 +252,19 @@ const CosmeticsAnalyzer = () => {
 
   return (
     <Container maxW="container.lg" py={8}>
-      <Flex minH="100vh" align="center" justify="center" py={12}>
+      <Flex
+        minH={{ base: "75vh", md: "80vh" }}
+        align="center"
+        justify="center"
+        py={12}
+      >
         <Box
           bg="white"
-          p={8}
+          p={{ base: 2, md: 8 }}
           borderRadius="lg"
           boxShadow="md"
           maxW="600px"
+          py={{ base: "5", md: "8" }}
           w="100%"
         >
           <Heading as="h1" fontSize="2xl" mb={6} textAlign="center">
