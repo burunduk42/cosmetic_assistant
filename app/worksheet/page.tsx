@@ -282,7 +282,7 @@ const CosmeticsAnalyzer = () => {
                       placeholder="Введите состав..."
                       value={ingredientInput}
                       onChange={(e) => setIngredientInput(e.target.value)}
-                      h={400}
+                      h={200}
                       required
                     />
                   </Field>
